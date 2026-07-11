@@ -1,0 +1,14 @@
+numpy
+pandas
+scikit-learn
+networkx
+underthesea
+rouge-score
+jinja2
+dotenv
+transformers
+underthesea
+sentencepiece
+torch
+rouge-score
+sacrebleu
