@@ -11,7 +11,7 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
-from week34_summarization.data import records_from_rows, read_rows, write_json, write_records_csv
+from data import records_from_rows, read_rows, write_json, write_records_csv
 
 
 def parse_args() -> argparse.Namespace:

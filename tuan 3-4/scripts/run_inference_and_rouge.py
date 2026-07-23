@@ -13,9 +13,9 @@ from time import perf_counter
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
-from week34_summarization.data import records_from_rows, read_rows
-from week34_summarization.metrics import compression_statistics, compute_rouge
-from week34_summarization.model import generate_summaries
+from data import records_from_rows, read_rows
+from metrics import compression_statistics, compute_rouge
+from model import generate_summaries
 
 
 DEFAULT_MODEL = "VietAI/vit5-base-vietnews-summarization"

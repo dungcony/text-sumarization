@@ -6,7 +6,7 @@ from statistics import mean
 
 from rouge_score import rouge_scorer
 
-from .text import normalize_text, word_count
+from text import normalize_text, word_count
 
 
 def compute_rouge(predictions: list[str], references: list[str]) -> dict[str, dict[str, float]]:

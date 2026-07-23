@@ -10,7 +10,7 @@ from pathlib import Path
 from statistics import mean
 from typing import Any, Iterable
 
-from .text import canonical_pair_key, normalize_text, word_count
+from text import canonical_pair_key, normalize_text, word_count
 
 
 SOURCE_ALIASES = ("article", "document", "text", "source")

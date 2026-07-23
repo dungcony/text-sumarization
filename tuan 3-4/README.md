@@ -37,7 +37,7 @@ python -m pip install -e .
 ## Tuần 3 — Inference và ROUGE
 
 Nếu muốn chạy theo notebook, mở
-[`notebooks/week34_inference_and_data.ipynb`](notebooks/week34_inference_and_data.ipynb)
+[`week34_inference_and_data.ipynb`](week34_inference_and_data.ipynb)
 trong Jupyter hoặc VS Code, đặt `PROJECT_ROOT` ở cell đầu tiên và chạy lần lượt
 từ trên xuống. Notebook gọi đúng các module bên dưới, không phải phiên bản code
 riêng.
@@ -53,7 +53,7 @@ python scripts/run_inference_and_rouge.py \
 
 Script xuất một JSON có metadata lần chạy, thiết lập sinh, ROUGE (precision,
 recall, F1 trên thang 0–100), tỷ lệ rút gọn và từng dự đoán. Tất cả các chỉ số
-trong `results/` là kết quả thực thi; không có số liệu được điền sẵn.
+trong `results` là kết quả thực thi; không có số liệu được điền sẵn.
 
 Các tùy chọn thường dùng:
 
