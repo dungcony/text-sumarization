@@ -1,3 +1,19 @@
+Metadata-Version: 2.4
+Name: vn-summarization-week34
+Version: 0.1.0
+Summary: Week 3-4: pretrained Vietnamese summarization inference, ROUGE, and raw-data preparation
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: torch>=2.3
+Requires-Dist: transformers<5,>=4.45
+Requires-Dist: sentencepiece>=0.2
+Requires-Dist: pandas>=2.0
+Requires-Dist: rouge-score>=0.1.2
+Provides-Extra: hf
+Requires-Dist: datasets>=2.20; extra == "hf"
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+
 # Tuần 3–4 — Transformer sinh tóm tắt và thu thập dữ liệu
 
 Module này là phần thực hành độc lập cho hai tuần giữa kỳ thực tập. Phạm vi

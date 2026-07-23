@@ -3,9 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/thuc-tap.iml" filepath="$PROJECT_DIR$/.idea/thuc-tap.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/vn-summarization-week34@1.iml" filepath="$PROJECT_DIR$/.idea/vn-summarization-week34@1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/vn-summarization@1.iml" filepath="$PROJECT_DIR$/.idea/vn-summarization@1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/vn-summarization@2.iml" filepath="$PROJECT_DIR$/.idea/vn-summarization@2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/vn-summarization.iml" filepath="$PROJECT_DIR$/.idea/vn-summarization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/vn-summarization-week34.iml" filepath="$PROJECT_DIR$/.idea/vn-summarization-week34.iml" />
     </modules>
   </component>
 </project>

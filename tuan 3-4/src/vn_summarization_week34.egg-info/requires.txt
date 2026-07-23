@@ -1,0 +1,11 @@
+torch>=2.3
+transformers<5,>=4.45
+sentencepiece>=0.2
+pandas>=2.0
+rouge-score>=0.1.2
+
+[dev]
+pytest>=8.0
+
+[hf]
+datasets>=2.20
