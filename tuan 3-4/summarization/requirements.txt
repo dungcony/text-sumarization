@@ -1,0 +1,6 @@
+torch>=2.3
+transformers>=4.45,<5
+sentencepiece>=0.2
+pandas>=2.0
+rouge-score>=0.1.2
+# Optional: datasets>=2.20 for direct Hugging Face downloads.

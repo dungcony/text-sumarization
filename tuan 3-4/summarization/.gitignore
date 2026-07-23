@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+results/*.json
+results/*.jsonl
+!results/.gitkeep
+!results/vit5_sample_5.json

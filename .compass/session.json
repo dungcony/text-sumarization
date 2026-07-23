@@ -1,0 +1,28 @@
+{
+  "id": "70cb6a8f-017d-4bc4-8f64-dc602a5a0e32",
+  "createdAt": "2026-07-16T08:19:54.902Z",
+  "updatedAt": "2026-07-16T08:20:22.385Z",
+  "projectPath": "/home/dungcony/projects/python/thuc-tap",
+  "state": {
+    "conversationHistory": [],
+    "operations": [],
+    "currentModel": "__compass_auto__",
+    "modelResolution": {
+      "source": "user",
+      "resolvedAt": "2026-07-16T08:20:22.385Z"
+    },
+    "approvalMode": "manual",
+    "contextFiles": [],
+    "executionMode": "hybrid",
+    "originalUserRequest": "@compass-ai/nova"
+  },
+  "metadata": {
+    "totalTokensUsed": 0,
+    "totalCost": 0,
+    "messageCount": 0,
+    "operationCount": 0,
+    "lastActivity": "2026-07-16T08:19:54.902Z",
+    "tags": [],
+    "estimatedContextTokens": 21
+  }
+}

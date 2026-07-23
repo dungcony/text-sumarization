@@ -1,0 +1,25 @@
+{
+  "version": "1.0",
+  "kind": "automation_state",
+  "id": "automation_state-current",
+  "createdAt": "2026-07-16T08:20:24.948Z",
+  "updatedAt": "2026-07-16T08:20:24.948Z",
+  "payload": {
+    "version": "1.0",
+    "updatedAt": "2026-07-16T08:20:24.948Z",
+    "archiveRecall": {},
+    "webhooks": {
+      "deliveries": []
+    },
+    "daemon": {
+      "status": "stopped"
+    },
+    "scheduler": {
+      "owner": "interactive",
+      "ownerId": "interactive:365934:6a5da23e-e085-422d-a004-2e1745bb3e81",
+      "acquiredAt": "2026-07-16T08:19:54.964Z",
+      "expiresAt": "2026-07-16T08:22:24.948Z",
+      "lastDecision": "interactive runner owns scheduled execution"
+    }
+  }
+}

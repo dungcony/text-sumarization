@@ -1,0 +1,27 @@
+{
+  "input_rows": 1000,
+  "accepted_rows": 990,
+  "rejected_rows": 10,
+  "rejected_by_reason": {
+    "exact_duplicate_pair": 10
+  },
+  "columns": {
+    "article": "Document",
+    "summary": "Summary",
+    "id": null
+  },
+  "filters": {
+    "min_article_words": 10,
+    "min_summary_words": 3,
+    "requires_summary_shorter_than_article": true,
+    "deduplicate": "exact article-summary pair"
+  },
+  "length_statistics_words": {
+    "article_mean": 459.08,
+    "article_min": 108,
+    "article_max": 1525,
+    "summary_mean": 37.49,
+    "summary_min": 17,
+    "summary_max": 80
+  }
+}

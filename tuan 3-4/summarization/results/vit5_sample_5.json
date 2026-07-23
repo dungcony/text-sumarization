@@ -1,0 +1,101 @@
+{
+  "run": {
+    "created_at_utc": "2026-07-23T08:45:09.488030+00:00",
+    "model": "VietAI/vit5-base-vietnews-summarization",
+    "device": "cuda",
+    "input_path": "../../data/summarization_samples.json",
+    "number_of_examples": 5,
+    "elapsed_seconds": 9.95,
+    "seconds_per_example": 1.99
+  },
+  "generation": {
+    "prefix": "summarize: ",
+    "batch_size": 1,
+    "max_source_length": 384,
+    "max_new_tokens": 64,
+    "min_new_tokens": 8,
+    "num_beams": 2,
+    "no_repeat_ngram_size": 3
+  },
+  "input_audit": {
+    "input_rows": 10,
+    "accepted_rows": 5,
+    "rejected_rows": 0,
+    "rejected_by_reason": {},
+    "columns": {
+      "article": "text",
+      "summary": "summary",
+      "id": null
+    },
+    "filters": {
+      "min_article_words": 10,
+      "min_summary_words": 3,
+      "requires_summary_shorter_than_article": true,
+      "deduplicate": "exact article-summary pair"
+    },
+    "length_statistics_words": {
+      "article_mean": 96.8,
+      "article_min": 93,
+      "article_max": 101,
+      "summary_mean": 34.6,
+      "summary_min": 30,
+      "summary_max": 39
+    }
+  },
+  "metrics": {
+    "rouge": {
+      "rouge1": {
+        "precision": 67.29,
+        "recall": 51.8,
+        "f1": 58.05
+      },
+      "rouge2": {
+        "precision": 25.12,
+        "recall": 19.21,
+        "f1": 21.57
+      },
+      "rougeL": {
+        "precision": 39.74,
+        "recall": 30.62,
+        "f1": 34.29
+      }
+    },
+    "compression": {
+      "source_words_mean": 96.8,
+      "summary_words_mean": 28.6,
+      "compression_percent": 70.45
+    }
+  },
+  "predictions": [
+    {
+      "id": "1",
+      "article": "Nghiên cứu mới đây từ Đại học Oxford cho thấy việc ngủ đủ 7-8 tiếng mỗi đêm không chỉ giúp phục hồi thể lực mà còn đóng vai trò quan trọng trong việc củng cố trí nhớ. Trong khi ngủ, não bộ tiến hành 'dọn dẹp' các chất thải chuyển hóa, đồng thời sắp xếp lại các thông tin thu nhận được trong ngày. Những người thường xuyên thiếu ngủ có nguy cơ cao mắc các bệnh suy giảm trí nhớ và khó tập trung hơn 30% so với người ngủ đủ giấc.",
+      "reference": "Ngủ đủ 7-8 tiếng mỗi đêm giúp não bộ dọn dẹp chất thải chuyển hóa, củng cố trí nhớ và giảm nguy cơ suy giảm trí nhớ, mất tập trung.",
+      "prediction": "Người thường thiếu ngủ có nguy cơ mắc các bệnh suy giảm trí nhớ và khó tập trung hơn những người ngủ đủ giấc ."
+    },
+    {
+      "id": "2",
+      "article": "Trí tuệ nhân tạo (AI) đang tạo ra một cuộc cách mạng trong lĩnh vực y tế. Bằng cách phân tích hàng triệu bệnh án và hình ảnh y khoa trong thời gian ngắn, các mô hình học máy hiện có khả năng phát hiện sớm ung thư vú và ung thư phổi với độ chính xác ngang ngửa, thậm chí vượt trội hơn so với các bác sĩ chuyên khoa giàu kinh nghiệm. Tuy nhiên, các chuyên gia nhấn mạnh AI sẽ không thay thế bác sĩ mà đóng vai trò như một công cụ hỗ trợ đắc lực.",
+      "reference": "AI đang cách mạng hóa ngành y tế nhờ khả năng phân tích dữ liệu nhanh chóng và chẩn đoán chính xác ung thư, hứa hẹn trở thành công cụ hỗ trợ đắc lực cho bác sĩ.",
+      "prediction": "Các nhà khoa học cho biết trí tuệ nhân tạo có khả năng phát hiện sớm và thậm chí vượt trội hơn so với các bác sĩ chuyên khoa giàu kinh nghiệm ."
+    },
+    {
+      "id": "3",
+      "article": "Biến đổi khí hậu đang gây ra những tác động nghiêm trọng đến hệ sinh thái toàn cầu. Nhiệt độ Trái Đất tăng cao làm băng ở hai cực tan chảy với tốc độ kỷ lục, dẫn đến mực nước biển dâng đe dọa các thành phố ven biển. Ngoài ra, các hiện tượng thời tiết cực đoan như hạn hán, lũ lụt và bão lũ xuất hiện với tần suất dày đặc hơn, gây thiệt hại hàng tỷ USD và ảnh hưởng đến sinh kế của hàng triệu người dân trên thế giới.",
+      "reference": "Biến đổi khí hậu làm tăng nhiệt độ, tan băng, nước biển dâng và gây ra nhiều thời tiết cực đoan, đe dọa nghiêm trọng đến đời sống con người và hệ sinh thái.",
+      "prediction": "PGS.TS Nguyễn Ngọc Long - Đại học Quốc gia Hà Nội đã đưa ra nhận định tác động của biến đổi khí hậu đang ảnh hưởng nghiêm trọng đến hệ sinh thái toàn cầu ."
+    },
+    {
+      "id": "4",
+      "article": "Chế độ ăn Địa Trung Hải từ lâu đã được công nhận là một trong những lối sống lành mạnh nhất thế giới. Chế độ ăn này tập trung vào việc tiêu thụ nhiều rau xanh, trái cây, ngũ cốc nguyên hạt, dầu oliu và hải sản, trong khi hạn chế thịt đỏ và thực phẩm chế biến sẵn. Các nghiên cứu kéo dài nhiều thập kỷ chứng minh rằng việc tuân thủ chế độ ăn này giúp giảm đáng kể nguy cơ mắc bệnh tim mạch, tiểu đường tuýp 2 và tăng cường tuổi thọ.",
+      "reference": "Chế độ ăn Địa Trung Hải ưu tiên rau củ, dầu oliu, hải sản và hạn chế thịt đỏ giúp tăng tuổi thọ, giảm nguy cơ mắc bệnh tim mạch và tiểu đường.",
+      "prediction": "Chế độ ăn Địa Trung Hải là một trong những lối sống lành mạnh nhất thế giới ."
+    },
+    {
+      "id": "5",
+      "article": "Kính viễn vọng không gian James Webb của NASA đã gửi về những hình ảnh sắc nét chưa từng có về một cụm thiên hà cách Trái Đất hàng tỷ năm ánh sáng. Những dữ liệu mới này giúp các nhà thiên văn học quan sát được quá trình hình thành của các ngôi sao đầu tiên trong vũ trụ sơ khai. Việc phân tích quang phổ cũng cho thấy sự tồn tại của hơi nước và các phân tử hữu cơ cơ bản trên một số ngoại hành tinh, mở ra hi vọng tìm kiếm sự sống ngoài Trái Đất.",
+      "reference": "Kính viễn vọng James Webb gửi về hình ảnh chi tiết của cụm thiên hà xa xôi, giúp tìm hiểu vũ trụ sơ khai và phát hiện dấu hiệu có thể có sự sống trên các ngoại hành tinh.",
+      "prediction": "Cơ quan Hàng không vũ trụ Mỹ ( NASA ) vừa công bố những hình ảnh sắc nét về một cụm thiên hà cách Trái Đất hàng tỷ năm ánh sáng ."
+    }
+  ]
+}

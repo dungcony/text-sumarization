@@ -1,0 +1,374 @@
+{
+  "version": "1.0",
+  "projectRoot": "/home/dungcony/projects/python/thuc-tap",
+  "updatedAt": "2026-07-16T08:19:55.293Z",
+  "totalFiles": 20,
+  "totalSize": 1129321,
+  "files": {
+    "requirements.txt": {
+      "path": "requirements.txt",
+      "absolutePath": "/home/dungcony/projects/python/thuc-tap/requirements.txt",
+      "name": "requirements.txt",
+      "extension": "txt",
+      "size": 140,
+      "modifiedAt": "2026-07-09T10:42:07.000Z",
+      "language": "text",
+      "exports": [],
+      "imports": [],
+      "parsed": true
+    },
+    "docs/require.md": {
+      "path": "docs/require.md",
+      "absolutePath": "/home/dungcony/projects/python/thuc-tap/docs/require.md",
+      "name": "require.md",
+      "extension": "md",
+      "size": 332,
+      "modifiedAt": "2026-07-02T09:59:04.000Z",
+      "language": "markdown",
+      "exports": [],
+      "imports": [],
+      "parsed": true
+    },
+    "data/summarization_samples.json": {
+      "path": "data/summarization_samples.json",
+      "absolutePath": "/home/dungcony/projects/python/thuc-tap/data/summarization_samples.json",
+      "name": "summarization_samples.json",
+      "extension": "json",
+      "size": 8346,
+      "modifiedAt": "2026-07-11T09:09:43.000Z",
+      "language": "json",
+      "exports": [],
+      "imports": [],
+      "parsed": true
+    },
+    "src/text-rank/textrank.py": {
+      "path": "src/text-rank/textrank.py",
+      "absolutePath": "/home/dungcony/projects/python/thuc-tap/src/text-rank/textrank.py",
+      "name": "textrank.py",
+      "extension": "py",
+      "size": 4561,
+      "modifiedAt": "2026-07-05T09:32:23.000Z",
+      "language": "python",
+      "exports": [
+        "split_into_sentences",
+        "tokenize_vietnamese",
+        "TextRankSummarizer"
+      ],
+      "imports": [
+        "re",
+        "numpy",
+        "networkx",
+        "sklearn.feature_extraction.text",
+        "sklearn.metrics.pairwise",
+        "underthesea"
+      ],
+      "parsed": true
+    },
+    "src/text-rank/test_summarizer_using_text_rank.ipynb": {
+      "path": "src/text-rank/test_summarizer_using_text_rank.ipynb",
+      "absolutePath": "/home/dungcony/projects/python/thuc-tap/src/text-rank/test_summarizer_using_text_rank.ipynb",
+      "name": "test_summarizer_using_text_rank.ipynb",
+      "extension": "ipynb",
+      "size": 22811,
+      "modifiedAt": "2026-07-15T08:56:54.011Z",
+      "language": "text",
+      "exports": [],
+      "imports": [],
+      "parsed": true
+    },
+    "src/phobert/extractive-sumarization-using-phobert.ipynb": {
+      "path": "src/phobert/extractive-sumarization-using-phobert.ipynb",
+      "absolutePath": "/home/dungcony/projects/python/thuc-tap/src/phobert/extractive-sumarization-using-phobert.ipynb",
+      "name": "extractive-sumarization-using-phobert.ipynb",
+      "extension": "ipynb",
+      "size": 33581,
+      "modifiedAt": "2026-07-15T08:56:54.012Z",
+      "language": "text",
+      "exports": [],
+      "imports": [],
+      "parsed": true
+    },
+    "src/Seq2Seq/test_predictions.csv": {
+      "path": "src/Seq2Seq/test_predictions.csv",
+      "absolutePath": "/home/dungcony/projects/python/thuc-tap/src/Seq2Seq/test_predictions.csv",
+      "name": "test_predictions.csv",
+      "extension": "csv",
+      "size": 869672,
+      "modifiedAt": "2026-07-09T17:58:29.000Z",
+      "language": "text",
+      "exports": [],
+      "imports": [],
+      "parsed": true
+    },
+    "src/Seq2Seq/lstm_attention_demo.ipynb": {
+      "path": "src/Seq2Seq/lstm_attention_demo.ipynb",
+      "absolutePath": "/home/dungcony/projects/python/thuc-tap/src/Seq2Seq/lstm_attention_demo.ipynb",
+      "name": "lstm_attention_demo.ipynb",
+      "extension": "ipynb",
+      "size": 41531,
+      "modifiedAt": "2026-07-09T18:06:54.000Z",
+      "language": "text",
+      "exports": [],
+      "imports": [],
+      "parsed": true
+    },
+    "src/NLP-fine-turn/nlp-finetune.ipynb": {
+      "path": "src/NLP-fine-turn/nlp-finetune.ipynb",
+      "absolutePath": "/home/dungcony/projects/python/thuc-tap/src/NLP-fine-turn/nlp-finetune.ipynb",
+      "name": "nlp-finetune.ipynb",
+      "extension": "ipynb",
+      "size": 22633,
+      "modifiedAt": "2026-07-15T09:04:39.456Z",
+      "language": "text",
+      "exports": [],
+      "imports": [],
+      "parsed": true
+    },
+    "data/fine-turn/check_data.py": {
+      "path": "data/fine-turn/check_data.py",
+      "absolutePath": "/home/dungcony/projects/python/thuc-tap/data/fine-turn/check_data.py",
+      "name": "check_data.py",
+      "extension": "py",
+      "size": 2023,
+      "modifiedAt": "2026-07-14T10:06:47.533Z",
+      "language": "python",
+      "exports": [
+        "check_file"
+      ],
+      "imports": [
+        "pandas",
+        "numpy"
+      ],
+      "parsed": true
+    },
+    "src/text-rank/__pycache__/textrank.cpython-313.pyc": {
+      "path": "src/text-rank/__pycache__/textrank.cpython-313.pyc",
+      "absolutePath": "/home/dungcony/projects/python/thuc-tap/src/text-rank/__pycache__/textrank.cpython-313.pyc",
+      "name": "textrank.cpython-313.pyc",
+      "extension": "pyc",
+      "size": 5366,
+      "modifiedAt": "2026-07-05T09:39:35.000Z",
+      "language": "text",
+      "exports": [],
+      "imports": [],
+      "parsed": true
+    },
+    "src/NLP-fine-turn/pretrained-summarization/requirements.txt": {
+      "path": "src/NLP-fine-turn/pretrained-summarization/requirements.txt",
+      "absolutePath": "/home/dungcony/projects/python/thuc-tap/src/NLP-fine-turn/pretrained-summarization/requirements.txt",
+      "name": "requirements.txt",
+      "extension": "txt",
+      "size": 6,
+      "modifiedAt": "2026-07-13T09:40:42.000Z",
+      "language": "text",
+      "exports": [],
+      "imports": [],
+      "parsed": true
+    },
+    "src/NLP-fine-turn/pretrained-summarization/pyproject.toml": {
+      "path": "src/NLP-fine-turn/pretrained-summarization/pyproject.toml",
+      "absolutePath": "/home/dungcony/projects/python/thuc-tap/src/NLP-fine-turn/pretrained-summarization/pyproject.toml",
+      "name": "pyproject.toml",
+      "extension": "toml",
+      "size": 843,
+      "modifiedAt": "2026-07-13T09:40:42.000Z",
+      "language": "toml",
+      "exports": [],
+      "imports": [],
+      "parsed": true
+    },
+    "src/NLP-fine-turn/pretrained-summarization/kaggle_vit5_decode_tuning.ipynb": {
+      "path": "src/NLP-fine-turn/pretrained-summarization/kaggle_vit5_decode_tuning.ipynb",
+      "absolutePath": "/home/dungcony/projects/python/thuc-tap/src/NLP-fine-turn/pretrained-summarization/kaggle_vit5_decode_tuning.ipynb",
+      "name": "kaggle_vit5_decode_tuning.ipynb",
+      "extension": "ipynb",
+      "size": 14596,
+      "modifiedAt": "2026-07-15T08:57:52.592Z",
+      "language": "text",
+      "exports": [],
+      "imports": [],
+      "parsed": true
+    },
+    "src/NLP-fine-turn/pretrained-summarization/kaggle_test_evaluation.ipynb": {
+      "path": "src/NLP-fine-turn/pretrained-summarization/kaggle_test_evaluation.ipynb",
+      "absolutePath": "/home/dungcony/projects/python/thuc-tap/src/NLP-fine-turn/pretrained-summarization/kaggle_test_evaluation.ipynb",
+      "name": "kaggle_test_evaluation.ipynb",
+      "extension": "ipynb",
+      "size": 19048,
+      "modifiedAt": "2026-07-15T08:57:52.592Z",
+      "language": "text",
+      "exports": [],
+      "imports": [],
+      "parsed": true
+    },
+    "src/NLP-fine-turn/pretrained-summarization/kaggle_qwen3_extractive_4h.ipynb": {
+      "path": "src/NLP-fine-turn/pretrained-summarization/kaggle_qwen3_extractive_4h.ipynb",
+      "absolutePath": "/home/dungcony/projects/python/thuc-tap/src/NLP-fine-turn/pretrained-summarization/kaggle_qwen3_extractive_4h.ipynb",
+      "name": "kaggle_qwen3_extractive_4h.ipynb",
+      "extension": "ipynb",
+      "size": 16120,
+      "modifiedAt": "2026-07-15T08:57:52.591Z",
+      "language": "text",
+      "exports": [],
+      "imports": [],
+      "parsed": true
+    },
+    "src/NLP-fine-turn/pretrained-summarization/kaggle_continue_seq2seq_best.ipynb": {
+      "path": "src/NLP-fine-turn/pretrained-summarization/kaggle_continue_seq2seq_best.ipynb",
+      "absolutePath": "/home/dungcony/projects/python/thuc-tap/src/NLP-fine-turn/pretrained-summarization/kaggle_continue_seq2seq_best.ipynb",
+      "name": "kaggle_continue_seq2seq_best.ipynb",
+      "extension": "ipynb",
+      "size": 19820,
+      "modifiedAt": "2026-07-15T08:57:52.591Z",
+      "language": "text",
+      "exports": [],
+      "imports": [],
+      "parsed": true
+    },
+    "src/NLP-fine-turn/pretrained-summarization/kaggle_causal_lm_summarization.ipynb": {
+      "path": "src/NLP-fine-turn/pretrained-summarization/kaggle_causal_lm_summarization.ipynb",
+      "absolutePath": "/home/dungcony/projects/python/thuc-tap/src/NLP-fine-turn/pretrained-summarization/kaggle_causal_lm_summarization.ipynb",
+      "name": "kaggle_causal_lm_summarization.ipynb",
+      "extension": "ipynb",
+      "size": 15283,
+      "modifiedAt": "2026-07-15T08:57:52.590Z",
+      "language": "text",
+      "exports": [],
+      "imports": [],
+      "parsed": true
+    },
+    "src/NLP-fine-turn/pretrained-summarization/kaggle_allinone_report_experiments.ipynb": {
+      "path": "src/NLP-fine-turn/pretrained-summarization/kaggle_allinone_report_experiments.ipynb",
+      "absolutePath": "/home/dungcony/projects/python/thuc-tap/src/NLP-fine-turn/pretrained-summarization/kaggle_allinone_report_experiments.ipynb",
+      "name": "kaggle_allinone_report_experiments.ipynb",
+      "extension": "ipynb",
+      "size": 22350,
+      "modifiedAt": "2026-07-15T08:57:52.582Z",
+      "language": "text",
+      "exports": [],
+      "imports": [],
+      "parsed": true
+    },
+    "src/NLP-fine-turn/pretrained-summarization/README.md": {
+      "path": "src/NLP-fine-turn/pretrained-summarization/README.md",
+      "absolutePath": "/home/dungcony/projects/python/thuc-tap/src/NLP-fine-turn/pretrained-summarization/README.md",
+      "name": "README.md",
+      "extension": "md",
+      "size": 10259,
+      "modifiedAt": "2026-07-15T09:06:33.158Z",
+      "language": "markdown",
+      "exports": [],
+      "imports": [],
+      "parsed": true
+    }
+  },
+  "dependencyGraph": {
+    "requirements.txt": {
+      "path": "requirements.txt",
+      "dependencies": [],
+      "dependents": []
+    },
+    "docs/require.md": {
+      "path": "docs/require.md",
+      "dependencies": [],
+      "dependents": []
+    },
+    "data/summarization_samples.json": {
+      "path": "data/summarization_samples.json",
+      "dependencies": [],
+      "dependents": []
+    },
+    "src/text-rank/textrank.py": {
+      "path": "src/text-rank/textrank.py",
+      "dependencies": [],
+      "dependents": []
+    },
+    "src/text-rank/test_summarizer_using_text_rank.ipynb": {
+      "path": "src/text-rank/test_summarizer_using_text_rank.ipynb",
+      "dependencies": [],
+      "dependents": []
+    },
+    "src/phobert/extractive-sumarization-using-phobert.ipynb": {
+      "path": "src/phobert/extractive-sumarization-using-phobert.ipynb",
+      "dependencies": [],
+      "dependents": []
+    },
+    "src/Seq2Seq/test_predictions.csv": {
+      "path": "src/Seq2Seq/test_predictions.csv",
+      "dependencies": [],
+      "dependents": []
+    },
+    "src/Seq2Seq/lstm_attention_demo.ipynb": {
+      "path": "src/Seq2Seq/lstm_attention_demo.ipynb",
+      "dependencies": [],
+      "dependents": []
+    },
+    "src/NLP-fine-turn/nlp-finetune.ipynb": {
+      "path": "src/NLP-fine-turn/nlp-finetune.ipynb",
+      "dependencies": [],
+      "dependents": []
+    },
+    "data/fine-turn/check_data.py": {
+      "path": "data/fine-turn/check_data.py",
+      "dependencies": [],
+      "dependents": []
+    },
+    "src/text-rank/__pycache__/textrank.cpython-313.pyc": {
+      "path": "src/text-rank/__pycache__/textrank.cpython-313.pyc",
+      "dependencies": [],
+      "dependents": []
+    },
+    "src/NLP-fine-turn/pretrained-summarization/requirements.txt": {
+      "path": "src/NLP-fine-turn/pretrained-summarization/requirements.txt",
+      "dependencies": [],
+      "dependents": []
+    },
+    "src/NLP-fine-turn/pretrained-summarization/pyproject.toml": {
+      "path": "src/NLP-fine-turn/pretrained-summarization/pyproject.toml",
+      "dependencies": [],
+      "dependents": []
+    },
+    "src/NLP-fine-turn/pretrained-summarization/kaggle_vit5_decode_tuning.ipynb": {
+      "path": "src/NLP-fine-turn/pretrained-summarization/kaggle_vit5_decode_tuning.ipynb",
+      "dependencies": [],
+      "dependents": []
+    },
+    "src/NLP-fine-turn/pretrained-summarization/kaggle_test_evaluation.ipynb": {
+      "path": "src/NLP-fine-turn/pretrained-summarization/kaggle_test_evaluation.ipynb",
+      "dependencies": [],
+      "dependents": []
+    },
+    "src/NLP-fine-turn/pretrained-summarization/kaggle_qwen3_extractive_4h.ipynb": {
+      "path": "src/NLP-fine-turn/pretrained-summarization/kaggle_qwen3_extractive_4h.ipynb",
+      "dependencies": [],
+      "dependents": []
+    },
+    "src/NLP-fine-turn/pretrained-summarization/kaggle_continue_seq2seq_best.ipynb": {
+      "path": "src/NLP-fine-turn/pretrained-summarization/kaggle_continue_seq2seq_best.ipynb",
+      "dependencies": [],
+      "dependents": []
+    },
+    "src/NLP-fine-turn/pretrained-summarization/kaggle_causal_lm_summarization.ipynb": {
+      "path": "src/NLP-fine-turn/pretrained-summarization/kaggle_causal_lm_summarization.ipynb",
+      "dependencies": [],
+      "dependents": []
+    },
+    "src/NLP-fine-turn/pretrained-summarization/kaggle_allinone_report_experiments.ipynb": {
+      "path": "src/NLP-fine-turn/pretrained-summarization/kaggle_allinone_report_experiments.ipynb",
+      "dependencies": [],
+      "dependents": []
+    },
+    "src/NLP-fine-turn/pretrained-summarization/README.md": {
+      "path": "src/NLP-fine-turn/pretrained-summarization/README.md",
+      "dependencies": [],
+      "dependents": []
+    }
+  },
+  "cacheMetadata": {
+    "rootMtimeMs": 1784189024012.2844,
+    "rootCtimeMs": 1784189024012.2844,
+    "indexedAt": "2026-07-16T08:19:55.300Z",
+    "dirCount": 23,
+    "latestDirMtimeMs": 1784189024012.2844
+  }
+}
