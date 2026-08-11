@@ -26,6 +26,9 @@ Ví dụ:
 
 from __future__ import annotations
 
+import hashlib
+import json
+from pathlib import Path
 from typing import Any
 
 import torch
@@ -201,6 +204,231 @@ def load_model(
         )
 
     return model
+
+
+def is_lora_adapter_checkpoint(path: str | Path) -> bool:
+    """Kiểm tra một thư mục cục bộ có phải PEFT/LoRA adapter không.
+
+    PEFT lưu metadata bắt buộc trong ``adapter_config.json``. Hàm này
+    chỉ kiểm tra đường dẫn cục bộ; HuggingFace Hub model ID không bị
+    truy cập mạng chỉ để phát hiện loại checkpoint.
+    """
+    checkpoint_path = Path(path).expanduser()
+    return (
+        checkpoint_path.is_dir()
+        and (checkpoint_path / "adapter_config.json").is_file()
+    )
+
+
+def fingerprint_full_checkpoint(
+    path: str | Path,
+) -> dict[str, Any] | None:
+    """Tạo SHA-256 fingerprint cho config, tokenizer và weight shards local.
+
+    Trả về ``None`` với HuggingFace Hub ID/đường dẫn không phải thư mục local.
+    Fingerprint không chứa absolute path nên vẫn giữ nguyên khi artifact được
+    chuyển từ Kaggle Output sang Kaggle Dataset hoặc máy deploy.
+    """
+    checkpoint_dir = Path(path).expanduser()
+    if not checkpoint_dir.is_dir():
+        return None
+
+    config_path = checkpoint_dir / "config.json"
+    weight_paths = sorted({
+        *checkpoint_dir.glob("model*.safetensors"),
+        *checkpoint_dir.glob("pytorch_model*.bin"),
+    })
+    weight_paths = [item for item in weight_paths if item.is_file()]
+    if not config_path.is_file() or not weight_paths:
+        return None
+
+    tokenizer_paths = [
+        checkpoint_dir / name
+        for name in (
+            "spiece.model",
+            "tokenizer.json",
+            "tokenizer_config.json",
+            "special_tokens_map.json",
+        )
+        if (checkpoint_dir / name).is_file()
+    ]
+    files = [config_path, *tokenizer_paths, *weight_paths]
+    digest = hashlib.sha256()
+    records: list[dict[str, str | int]] = []
+    for file_path in files:
+        relative_name = file_path.relative_to(checkpoint_dir).as_posix()
+        size = file_path.stat().st_size
+        records.append({"name": relative_name, "size": size})
+        digest.update(relative_name.encode("utf-8"))
+        digest.update(b"\0")
+        with open(file_path, "rb") as handle:
+            for chunk in iter(lambda: handle.read(8 * 1024 * 1024), b""):
+                digest.update(chunk)
+
+    return {
+        "algorithm": "sha256",
+        "digest": digest.hexdigest(),
+        "files": records,
+    }
+
+
+def verify_adapter_base_dependency(
+    base_model_path: str | Path,
+    adapter_path: str | Path,
+) -> bool:
+    """Xác minh adapter đang được gắn đúng full checkpoint đã dùng để train.
+
+    Adapter cũ không có ``adapter_manifest.json`` vẫn được nạp để giữ tương
+    thích, nhưng hàm log cảnh báo và trả về ``False``. Adapter do pipeline mới
+    tạo có fingerprint; mismatch là lỗi cứng trước khi model lớn được tải.
+    """
+    adapter_dir = Path(adapter_path).expanduser()
+    manifest_path = adapter_dir / "adapter_manifest.json"
+    if not manifest_path.is_file():
+        logger.warning(
+            "Adapter không có adapter_manifest.json; không thể xác minh đúng "
+            "checkpoint base. Chỉ dùng artifact này nếu provenance đã được "
+            "kiểm tra bằng cách khác."
+        )
+        return False
+
+    try:
+        with open(manifest_path, "r", encoding="utf-8") as handle:
+            manifest = json.load(handle)
+    except (OSError, json.JSONDecodeError) as exc:
+        raise ValueError(
+            f"Không đọc được adapter manifest '{manifest_path}': {exc}"
+        ) from exc
+
+    dependency = manifest.get("base_model_dependency", {})
+    expected = dependency.get("fingerprint")
+    if not isinstance(expected, dict) or not expected.get("digest"):
+        logger.warning(
+            "Adapter manifest không có base fingerprint; không thể xác minh "
+            "đúng cặp base-adapter."
+        )
+        return False
+
+    actual = fingerprint_full_checkpoint(base_model_path)
+    if actual is None:
+        raise ValueError(
+            "Adapter có base fingerprint nhưng base_model_path không phải "
+            "full checkpoint local có thể xác minh. Hãy truyền đúng thư mục "
+            "Phase 1 best/, không dùng Hub ID hoặc adapter path."
+        )
+
+    if (
+        expected.get("algorithm") != actual["algorithm"]
+        or expected.get("digest") != actual["digest"]
+    ):
+        raise ValueError(
+            "LoRA adapter không thuộc checkpoint base đã chọn: fingerprint "
+            f"mong đợi={expected.get('digest')}, thực tế={actual['digest']}."
+        )
+
+    logger.info("Xác minh fingerprint base-adapter thành công")
+    return True
+
+
+def load_model_for_inference(
+    model_config: ModelConfig,
+    generation_config: GenConfigDC | None = None,
+    adapter_path: str | Path | None = None,
+) -> tuple[Any, Any]:
+    """Tải tokenizer và model cho inference, có thể gắn LoRA adapter.
+
+    ``model_config.name_or_path`` luôn phải trỏ tới full base model (ví dụ
+    checkpoint Phase 1). Khi ``adapter_path`` được cung cấp, base model được
+    giữ nguyên và adapter được nạp bằng ``PeftModel``; hàm không merge
+    adapter vào base weights.
+
+    Tham số:
+        model_config: Cấu hình của full base model/checkpoint.
+        generation_config: Thiết lập generation tùy chọn.
+        adapter_path: Thư mục LoRA cục bộ có ``adapter_config.json``.
+
+    Trả về:
+        Tuple ``(tokenizer, model)`` sẵn sàng cho inference.
+
+    Ngoại lệ:
+        ValueError: Khi base path thực chất là adapter, hoặc adapter không
+            có metadata bắt buộc.
+        FileNotFoundError: Khi ``adapter_path`` không tồn tại.
+        RuntimeError: Khi adapter không thể gắn vào base model.
+
+    Ví dụ:
+        >>> tokenizer, model = load_model_for_inference(
+        ...     phase_1_model_config,
+        ...     generation_config,
+        ...     adapter_path="outputs_phase_2/vit5_base/best",
+        ... )
+    """
+    base_model_path = model_config.name_or_path
+    if is_lora_adapter_checkpoint(base_model_path):
+        raise ValueError(
+            f"Đã phát hiện LoRA adapter tại '{base_model_path}', nhưng tham số "
+            "model/base phải trỏ tới full checkpoint. Hãy truyền checkpoint "
+            "Phase 1 làm base và truyền thư mục này qua adapter_path."
+        )
+
+    adapter_dir: Path | None = None
+    if adapter_path is not None:
+        # Xác thực adapter trước khi tải base model lớn để fail fast.
+        adapter_dir = Path(adapter_path).expanduser()
+        if not adapter_dir.exists():
+            raise FileNotFoundError(
+                f"Không tìm thấy thư mục LoRA adapter: '{adapter_dir}'."
+            )
+        if not adapter_dir.is_dir():
+            raise ValueError(
+                f"LoRA adapter phải là một thư mục, nhưng nhận được: "
+                f"'{adapter_dir}'."
+            )
+
+        adapter_config_path = adapter_dir / "adapter_config.json"
+        if not adapter_config_path.is_file():
+            raise ValueError(
+                f"'{adapter_dir}' không phải LoRA adapter hợp lệ: thiếu "
+                "adapter_config.json. Nếu đây là full checkpoint, hãy truyền nó "
+                "qua model_path/base_model_path và bỏ adapter_path."
+            )
+
+        verify_adapter_base_dependency(base_model_path, adapter_dir)
+
+    tokenizer = load_tokenizer(model_config)
+    model = load_model(model_config, tokenizer, generation_config)
+
+    if adapter_dir is None:
+        model.eval()
+        return tokenizer, model
+
+    try:
+        from peft import PeftModel
+    except ImportError as exc:
+        raise ImportError(
+            "Cần cài package 'peft' để nạp LoRA adapter."
+        ) from exc
+
+    logger.info(
+        f"Đã phát hiện LoRA adapter: {adapter_dir}; "
+        f"đang gắn vào base model: {base_model_path}"
+    )
+    try:
+        model = PeftModel.from_pretrained(
+            model,
+            str(adapter_dir),
+            is_trainable=False,
+        )
+    except Exception as exc:
+        raise RuntimeError(
+            f"Không thể nạp LoRA adapter '{adapter_dir}' vào base model "
+            f"'{base_model_path}'. Hãy kiểm tra adapter đã được train từ "
+            f"đúng checkpoint Phase 1. Chi tiết: {exc}"
+        ) from exc
+
+    model.eval()
+    logger.info("Nạp LoRA adapter thành công (không merge vào base model)")
+    return tokenizer, model
 
 
 # ---------------------------------------------------------------------------

@@ -512,6 +512,11 @@ def validate_config(config: SummarizationConfig) -> SummarizationConfig:
         at_least("lora.r", lc.r, 1)
         at_least("lora.lora_alpha", lc.lora_alpha, 1)
         non_empty("lora.target_modules", lc.target_modules)
+        if tc.freeze_encoder:
+            errors.append(
+                "LoRA đã tự đóng băng base model; hãy đặt "
+                "'training.freeze_encoder=false'"
+            )
 
     if errors:
         details = "\n".join(f"  - {error}" for error in errors)

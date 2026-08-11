@@ -3,13 +3,21 @@
 Evaluation Script (Script đánh giá)
 =================
 
-Đánh giá một checkpoint của mô hình đã được huấn luyện trên dữ liệu xác thực (validation data).
+Đánh giá checkpoint đầy đủ hoặc LoRA adapter trên tập validation/test.
 
 Sử dụng:
     # Đánh giá cơ bản:
     python scripts/evaluate.py \
         --model outputs/vit5_base/best \
-        --config configs/vit5_base.yaml
+        --config configs/vit5_base.yaml \
+        --split validation
+
+    # Đánh giá LoRA adapter trên test bằng checkpoint Phase 1 làm base:
+    python scripts/evaluate.py eval \
+        --model outputs/phase_2_lora/best \
+        --base-model outputs/phase_1/best \
+        --config configs/vit5_base_phase_2_lora.yaml \
+        --split test
 
     # Đánh giá với thư mục đầu ra tùy chỉnh:
     python scripts/evaluate.py \
@@ -58,6 +66,16 @@ def main():
         help="Thư mục để lưu kết quả đánh giá",
     )
     eval_parser.add_argument(
+        "--split", choices=("validation", "test"), default="validation",
+        help="Phần dữ liệu cần đánh giá (mặc định: validation)",
+    )
+    eval_parser.add_argument(
+        "--base-model",
+        help=(
+            "Checkpoint mô hình nền (ví dụ Phase 1) khi --model là LoRA adapter"
+        ),
+    )
+    eval_parser.add_argument(
         "--no-predictions", action="store_true",
         help="Bỏ qua việc xuất các dự đoán dạng JSONL",
     )
@@ -75,6 +93,18 @@ def main():
     parser.add_argument("--model", help="Đường dẫn tới checkpoint mô hình")
     parser.add_argument("--config", help="Đường dẫn tới file cấu hình YAML")
     parser.add_argument("--output-dir", help="Thư mục đầu ra")
+    parser.add_argument(
+        "--split", choices=("validation", "test"), default="validation",
+        help="Phần dữ liệu cần đánh giá (mặc định: validation)",
+    )
+    parser.add_argument(
+        "--base-model",
+        help="Checkpoint mô hình nền khi --model là LoRA adapter",
+    )
+    parser.add_argument(
+        "--no-predictions", action="store_true",
+        help="Bỏ qua việc xuất các dự đoán dạng JSONL",
+    )
     parser.add_argument("--summarize", help="Thư mục gốc cần tổng hợp")
 
     args = parser.parse_args()
@@ -87,6 +117,8 @@ def main():
             config=config,
             output_dir=args.output_dir,
             export_predictions=not args.no_predictions,
+            split=args.split,
+            base_model_path=args.base_model,
         )
 
         print("\n" + "=" * 50)
@@ -109,6 +141,9 @@ def main():
             model_path=args.model,
             config=config,
             output_dir=args.output_dir,
+            export_predictions=not args.no_predictions,
+            split=args.split,
+            base_model_path=args.base_model,
         )
 
         print("\n" + "=" * 50)

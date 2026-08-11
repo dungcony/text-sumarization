@@ -68,22 +68,29 @@ def clean_text(text: str) -> str:
 # ---------------------------------------------------------------------------
 
 def load_dataset_from_files(
-        train_file: str | Path,
-        valid_file: str | Path,
+        train_file: Optional[str | Path] = None,
+        valid_file: Optional[str | Path] = None,
         test_file: Optional[str | Path] = None,
 ) -> DatasetDict:
-    """Tải toàn bộ file CSV/Parquet khớp với mỗi pattern vào DatasetDict.
+    """Tải các split CSV/Parquet được cung cấp vào một DatasetDict.
+
+    ``train_file`` và ``valid_file`` vẫn được dùng như trước trong training,
+    nhưng có thể để ``None`` khi evaluator chỉ cần một split duy nhất.
+
     Trả về:
-        DatasetDict chứa các phần chia 'train', 'validation', và 'test'.
+        DatasetDict chứa đúng các split đã cung cấp.
     """
     from datasets import concatenate_datasets, load_dataset
 
-    patterns = {
-        "train": str(train_file),
-        "validation": str(valid_file),
-    }
+    patterns = {}
+    if train_file:
+        patterns["train"] = str(train_file)
+    if valid_file:
+        patterns["validation"] = str(valid_file)
     if test_file:
         patterns["test"] = str(test_file)
+    if not patterns:
+        raise ValueError("Phải cung cấp ít nhất một file/pattern dữ liệu.")
 
     def resolve_files(split_name: str, pattern: str) -> list[Path]:
         paths = sorted(

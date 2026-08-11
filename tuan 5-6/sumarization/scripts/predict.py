@@ -11,6 +11,12 @@ Sử dụng:
         --model outputs/vit5_base/best \
         --text "Bài viết dài cần tóm tắt..."
 
+    # Phase 1 full checkpoint + Phase 2 LoRA adapter (không merge):
+    python scripts/predict.py \
+        --base-model outputs_phase_1/vit5_base/best \
+        --adapter outputs_phase_2_lora/vit5_base/best \
+        --text "Bài viết y tế cần tóm tắt..."
+
     # Tóm tắt từ một file:
     python scripts/predict.py \
         --model outputs/vit5_base/best \
