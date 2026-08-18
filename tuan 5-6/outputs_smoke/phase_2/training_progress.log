@@ -1,0 +1,14 @@
+[2026-08-18 16:34:53] [PHASE 2] TRAINER ĐÃ VÀO VÒNG LẶP | step=0/1 (0.0%) | đã chạy=0s | ETA=đang tính | log mỗi 1 step, heartbeat mỗi 60s
+[2026-08-18 16:34:53] [PHASE 2] Bắt đầu epoch 1/1
+[2026-08-18 16:34:53] [PHASE 2] Đang xử lý optimizer step 1/1...
+[2026-08-18 16:34:53] [PHASE 2] Đã hoàn tất | step=1/1 (100.0%) | đã chạy=0s | ETA=đang tính | GPU RAM=1.70/2.79 GB (allocated/reserved)
+[2026-08-18 16:34:53] [PHASE 2] METRICS | loss=2.0092 | learning_rate=0 | grad_norm=26.2181 | epoch=0.25
+[2026-08-18 16:34:56] [PHASE 2] METRICS | epoch=0.25
+[2026-08-18 16:34:56] [PHASE 2] ĐÁNH GIÁ XONG | eval_loss=2.9610, eval_rouge1=16.1500, eval_rouge2=4.1100, eval_rougeL=13.4800
+[2026-08-18 16:34:59] [PHASE 2] ĐÃ LƯU CHECKPOINT tại step 1
+[2026-08-18 16:34:59] [PHASE 2] METRICS | epoch=0.25
+[2026-08-18 16:34:59] [PHASE 2] KẾT THÚC TRAIN | step=1/1 (100.0%) | đã chạy=5s | ETA=đang tính
+[2026-08-18 16:35:04] [PHASE 2] METRICS | epoch=0.25
+[2026-08-18 16:35:04] [PHASE 2] ĐÁNH GIÁ XONG | eval_loss=2.9610, eval_rouge1=16.1500, eval_rouge2=4.1100, eval_rougeL=13.4800
+[2026-08-18 16:35:07] [PHASE 2] METRICS | epoch=0.25
+[2026-08-18 16:35:07] [PHASE 2] ĐÁNH GIÁ XONG | không có metric tóm tắt

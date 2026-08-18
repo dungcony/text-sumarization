@@ -1,0 +1,29 @@
+{
+  "baseline_model": "/home/dungcony/projects/python/thuc-tap/tuan 5-6/outputs/best",
+  "finetuned_model": "/home/dungcony/projects/python/thuc-tap/tuan 5-6/outputs_smoke/phase_1/best",
+  "selection_metric": "validation_rougeL",
+  "test_samples": 2,
+  "metrics": {
+    "rouge1": {
+      "before_finetune": 42.12,
+      "after_finetune": 42.12,
+      "absolute_improvement": 0.0
+    },
+    "rouge2": {
+      "before_finetune": 25.67,
+      "after_finetune": 25.67,
+      "absolute_improvement": 0.0
+    },
+    "rougeL": {
+      "before_finetune": 36.48,
+      "after_finetune": 36.48,
+      "absolute_improvement": 0.0
+    }
+  },
+  "phase_2_gate": {
+    "baseline_validation_rougeL": 55.96,
+    "finetuned_validation_rougeL": 55.96,
+    "absolute_improvement": 0.0,
+    "phase_1_better_than_baseline": false
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "baseline_eval_loss": 0.976496696472168,
+  "baseline_eval_model_preparation_time": 0.0052,
+  "baseline_eval_rouge1": 58.93,
+  "baseline_eval_rouge2": 46.59,
+  "baseline_eval_rougeL": 55.96,
+  "baseline_eval_gen_len": 43.0,
+  "baseline_eval_runtime": 3.197,
+  "baseline_eval_samples_per_second": 0.626,
+  "baseline_eval_steps_per_second": 0.626
+}

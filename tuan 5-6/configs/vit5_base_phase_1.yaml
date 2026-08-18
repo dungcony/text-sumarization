@@ -1,0 +1,55 @@
+# Giai đoạn 1: tinh chỉnh toàn bộ mô hình trên dữ liệu tổng quát
+phase:
+  name: "phase_1"
+  description: "Fine-tune toàn bộ ViT5-base trên dữ liệu Parquet tổng quát."
+model:
+  name_or_path: "VietAI/vit5-base"
+  use_fast_tokenizer: false
+  trust_remote_code: false
+
+data:
+  train_file: "data/phase_1/train_*.**"
+  valid_file: "data/phase_1/validation_*.**"
+  test_file: "data/phase_1/test_*.**"
+  source_prefix: "summarize: "
+  max_source_length: 768
+  max_target_length: 256
+
+training:
+  output_dir: "outputs_phase_1/vit5_base"
+  seed: 42
+  num_train_epochs: 3
+  per_device_train_batch_size: 2
+  per_device_eval_batch_size: 1
+  gradient_accumulation_steps: 8  # Kích thước lô hiệu dụng: 16/GPU
+  learning_rate: 0.00003
+  weight_decay: 0.01
+  warmup_ratio: 0.05
+  lr_scheduler_type: "cosine"
+  optim: "adafactor"
+  label_smoothing_factor: 0.0
+  precision: "auto"
+  gradient_checkpointing: true
+  freeze_encoder: false
+  eval_strategy: "epoch"
+  save_strategy: "epoch"
+  save_total_limit: 2
+  logging_steps: 50
+  metric_for_best_model: "rougeL"
+  greater_is_better: true
+  load_best_model_at_end: true
+  early_stopping_patience: 2
+  ddp_find_unused_parameters: false
+
+generation:
+  # Chỉ dùng khi sinh văn bản ở bước xác thực, kiểm thử hoặc suy luận
+  max_length: 256
+  min_length: 20
+  num_beams: 2
+  length_penalty: 1.0
+  no_repeat_ngram_size: 3
+  repetition_penalty: 1.0
+  early_stopping: true
+
+lora:
+  enabled: false

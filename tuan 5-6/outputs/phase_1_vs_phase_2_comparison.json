@@ -1,0 +1,68 @@
+{
+  "comparison": "phase_1_vs_phase_2_on_same_phase_2_data",
+  "selection_metric": "validation_rougeL",
+  "phase_1_checkpoint": "/kaggle/input/notebooks/b22dccn128lngtindng/vit5-trainner/outputs_phase_1/vit5_base/best",
+  "phase_2_checkpoint": "/kaggle/working/outputs_phase_2/vit5_base/best",
+  "validation_samples": 859,
+  "test_samples": 871,
+  "validation": {
+    "loss": {
+      "phase_1": 3.086000442504883,
+      "phase_2": 2.0109827518463135,
+      "phase_2_minus_phase_1": -1.0750176906585693,
+      "phase_2_improvement": 1.0750176906585693,
+      "higher_is_better": false
+    },
+    "rouge1": {
+      "phase_1": 46.73,
+      "phase_2": 55.23,
+      "phase_2_minus_phase_1": 8.5,
+      "phase_2_improvement": 8.5,
+      "higher_is_better": true
+    },
+    "rouge2": {
+      "phase_1": 22.54,
+      "phase_2": 26.1,
+      "phase_2_minus_phase_1": 3.5600000000000023,
+      "phase_2_improvement": 3.5600000000000023,
+      "higher_is_better": true
+    },
+    "rougeL": {
+      "phase_1": 29.11,
+      "phase_2": 36.54,
+      "phase_2_minus_phase_1": 7.43,
+      "phase_2_improvement": 7.43,
+      "higher_is_better": true
+    }
+  },
+  "test": {
+    "loss": {
+      "phase_1": 3.091006278991699,
+      "phase_2": 2.0192086696624756,
+      "phase_2_minus_phase_1": -1.0717976093292236,
+      "phase_2_improvement": 1.0717976093292236,
+      "higher_is_better": false
+    },
+    "rouge1": {
+      "phase_1": 46.3,
+      "phase_2": 54.75,
+      "phase_2_minus_phase_1": 8.450000000000003,
+      "phase_2_improvement": 8.450000000000003,
+      "higher_is_better": true
+    },
+    "rouge2": {
+      "phase_1": 22.25,
+      "phase_2": 26.13,
+      "phase_2_minus_phase_1": 3.879999999999999,
+      "phase_2_improvement": 3.879999999999999,
+      "higher_is_better": true
+    },
+    "rougeL": {
+      "phase_1": 28.94,
+      "phase_2": 36.55,
+      "phase_2_minus_phase_1": 7.609999999999996,
+      "phase_2_improvement": 7.609999999999996,
+      "higher_is_better": true
+    }
+  }
+}

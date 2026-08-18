@@ -1,0 +1,62 @@
+{
+  "best_global_step": 1,
+  "best_metric": 55.96,
+  "best_model_checkpoint": "/home/dungcony/projects/python/thuc-tap/tuan 5-6/outputs_smoke/phase_1/checkpoint-1",
+  "epoch": 1.0,
+  "eval_steps": 1,
+  "global_step": 1,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "epoch": 1.0,
+      "grad_norm": 7.50171422958374,
+      "learning_rate": 0.0,
+      "loss": 2.0297,
+      "step": 1
+    },
+    {
+      "epoch": 1.0,
+      "eval_gen_len": 43.0,
+      "eval_loss": 0.976496696472168,
+      "eval_rouge1": 58.93,
+      "eval_rouge2": 46.59,
+      "eval_rougeL": 55.96,
+      "eval_runtime": 5.6832,
+      "eval_samples_per_second": 0.352,
+      "eval_steps_per_second": 0.352,
+      "step": 1
+    }
+  ],
+  "logging_steps": 1,
+  "max_steps": 1,
+  "num_input_tokens_seen": 0,
+  "num_train_epochs": 1,
+  "save_steps": 1,
+  "stateful_callbacks": {
+    "EarlyStoppingCallback": {
+      "args": {
+        "early_stopping_patience": 2,
+        "early_stopping_threshold": 0.0
+      },
+      "attributes": {
+        "early_stopping_patience_counter": 0
+      }
+    },
+    "TrainerControl": {
+      "args": {
+        "should_epoch_stop": false,
+        "should_evaluate": false,
+        "should_log": false,
+        "should_save": true,
+        "should_training_stop": true
+      },
+      "attributes": {}
+    }
+  },
+  "total_flos": 608957890560.0,
+  "train_batch_size": 8,
+  "trial_name": null,
+  "trial_params": null
+}

@@ -1,0 +1,12 @@
+{
+  "triggered": true,
+  "smoke_test": true,
+  "gate_passed": false,
+  "gate_metric": "validation_rougeL",
+  "phase_1_improvement": 0.0,
+  "phase_1_checkpoint": "/home/dungcony/projects/python/thuc-tap/tuan 5-6/outputs_smoke/phase_1/best",
+  "status": "completed",
+  "phase_2_checkpoint": "/home/dungcony/projects/python/thuc-tap/tuan 5-6/outputs_smoke/phase_2/best",
+  "phase_2_eval_rougeL": 13.48,
+  "phase_2_test_rougeL": 43.51
+}

@@ -1,0 +1,10 @@
+{
+  "phase1_eval_loss": 3.086000442504883,
+  "phase1_eval_rouge1": 46.73,
+  "phase1_eval_rouge2": 22.54,
+  "phase1_eval_rougeL": 29.11,
+  "phase1_eval_gen_len": 118.0,
+  "phase1_eval_runtime": 1278.2279,
+  "phase1_eval_samples_per_second": 0.672,
+  "phase1_eval_steps_per_second": 0.336
+}

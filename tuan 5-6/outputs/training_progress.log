@@ -1,0 +1,267 @@
+[2026-07-27 05:52:12] [PHASE 2] ĐÃ VÀO VÒNG LẶP TRAIN | step=0/648 (0.0%) | elapsed=0s | ETA=đang tính
+[2026-07-27 05:52:12] [PHASE 2] Bắt đầu epoch 1/3
+[2026-07-27 05:52:12] [PHASE 2] Đang xử lý optimizer step 1/648...
+[2026-07-27 05:52:15] [PHASE 2] Đã hoàn tất | step=1/648 (0.2%) | elapsed=3s | ETA=36m 8s | GPU RAM=0.87/9.70 GB
+[2026-07-27 05:52:15] [PHASE 2] METRICS | loss=3.0592 | learning_rate=0 | grad_norm=7.5273 | epoch=0.00462963
+[2026-07-27 05:52:44] [PHASE 2] Đang xử lý optimizer step 10/648...
+[2026-07-27 05:52:47] [PHASE 2] Đã hoàn tất | step=10/648 (1.5%) | elapsed=35s | ETA=37m 57s | GPU RAM=0.87/10.92 GB
+[2026-07-27 05:52:47] [PHASE 2] METRICS | loss=3.0949 | learning_rate=6.92308e-07 | grad_norm=7.0925 | epoch=0.0462963
+[2026-07-27 05:53:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=16/648 (2.5%) | elapsed=1m 0s | ETA=39m 30s | GPU RAM=1.71/11.25 GB
+[2026-07-27 05:53:18] [PHASE 2] Đang xử lý optimizer step 20/648...
+[2026-07-27 05:53:21] [PHASE 2] Đã hoàn tất | step=20/648 (3.1%) | elapsed=1m 9s | ETA=36m 27s | GPU RAM=0.87/11.25 GB
+[2026-07-27 05:53:21] [PHASE 2] METRICS | loss=3.0538 | learning_rate=1.46154e-06 | grad_norm=6.7091 | epoch=0.0925926
+[2026-07-27 05:53:52] [PHASE 2] Đang xử lý optimizer step 30/648...
+[2026-07-27 05:53:55] [PHASE 2] Đã hoàn tất | step=30/648 (4.6%) | elapsed=1m 43s | ETA=35m 38s | GPU RAM=0.87/11.82 GB
+[2026-07-27 05:53:55] [PHASE 2] METRICS | loss=2.9854 | learning_rate=2.23077e-06 | grad_norm=5.45241 | epoch=0.138889
+[2026-07-27 05:54:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=34/648 (5.2%) | elapsed=2m 0s | ETA=36m 7s | GPU RAM=7.70/11.82 GB
+[2026-07-27 05:54:27] [PHASE 2] Đang xử lý optimizer step 40/648...
+[2026-07-27 05:54:30] [PHASE 2] Đã hoàn tất | step=40/648 (6.2%) | elapsed=2m 18s | ETA=35m 10s | GPU RAM=0.87/11.82 GB
+[2026-07-27 05:54:30] [PHASE 2] METRICS | loss=2.7379 | learning_rate=3e-06 | grad_norm=4.94775 | epoch=0.185185
+[2026-07-27 05:55:01] [PHASE 2] Đang xử lý optimizer step 50/648...
+[2026-07-27 05:55:04] [PHASE 2] Đã hoàn tất | step=50/648 (7.7%) | elapsed=2m 52s | ETA=34m 25s | GPU RAM=0.87/11.82 GB
+[2026-07-27 05:55:04] [PHASE 2] METRICS | loss=2.5875 | learning_rate=3.76923e-06 | grad_norm=4.33417 | epoch=0.231481
+[2026-07-27 05:55:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=52/648 (8.0%) | elapsed=3m 0s | ETA=34m 23s | GPU RAM=9.35/11.82 GB
+[2026-07-27 05:55:35] [PHASE 2] Đang xử lý optimizer step 60/648...
+[2026-07-27 05:55:39] [PHASE 2] Đã hoàn tất | step=60/648 (9.3%) | elapsed=3m 27s | ETA=33m 52s | GPU RAM=0.87/11.82 GB
+[2026-07-27 05:55:39] [PHASE 2] METRICS | loss=2.5778 | learning_rate=4.53846e-06 | grad_norm=3.70756 | epoch=0.277778
+[2026-07-27 05:56:10] [PHASE 2] Đang xử lý optimizer step 70/648...
+[2026-07-27 05:56:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=69/648 (10.6%) | elapsed=4m 0s | ETA=33m 33s | GPU RAM=1.71/11.82 GB
+[2026-07-27 05:56:14] [PHASE 2] Đã hoàn tất | step=70/648 (10.8%) | elapsed=4m 2s | ETA=33m 18s | GPU RAM=0.87/11.82 GB
+[2026-07-27 05:56:14] [PHASE 2] METRICS | loss=2.4646 | learning_rate=4.99942e-06 | grad_norm=3.93558 | epoch=0.324074
+[2026-07-27 05:56:44] [PHASE 2] Đang xử lý optimizer step 80/648...
+[2026-07-27 05:56:48] [PHASE 2] Đã hoàn tất | step=80/648 (12.3%) | elapsed=4m 36s | ETA=32m 40s | GPU RAM=0.87/11.82 GB
+[2026-07-27 05:56:48] [PHASE 2] METRICS | loss=2.4344 | learning_rate=4.99289e-06 | grad_norm=4.14632 | epoch=0.37037
+[2026-07-27 05:57:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=87/648 (13.4%) | elapsed=5m 0s | ETA=32m 14s | GPU RAM=9.96/11.82 GB
+[2026-07-27 05:57:18] [PHASE 2] Đang xử lý optimizer step 90/648...
+[2026-07-27 05:57:21] [PHASE 2] Đã hoàn tất | step=90/648 (13.9%) | elapsed=5m 9s | ETA=32m 0s | GPU RAM=0.87/11.82 GB
+[2026-07-27 05:57:21] [PHASE 2] METRICS | loss=2.3902 | learning_rate=4.97912e-06 | grad_norm=3.40971 | epoch=0.416667
+[2026-07-27 05:57:52] [PHASE 2] Đang xử lý optimizer step 100/648...
+[2026-07-27 05:57:55] [PHASE 2] Đã hoàn tất | step=100/648 (15.4%) | elapsed=5m 43s | ETA=31m 24s | GPU RAM=0.87/11.82 GB
+[2026-07-27 05:57:55] [PHASE 2] METRICS | loss=2.3029 | learning_rate=4.95816e-06 | grad_norm=3.53634 | epoch=0.462963
+[2026-07-27 05:58:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=104/648 (16.0%) | elapsed=6m 0s | ETA=31m 23s | GPU RAM=7.04/11.82 GB
+[2026-07-27 05:58:27] [PHASE 2] Đang xử lý optimizer step 110/648...
+[2026-07-27 05:58:30] [PHASE 2] Đã hoàn tất | step=110/648 (17.0%) | elapsed=6m 18s | ETA=30m 51s | GPU RAM=0.87/11.82 GB
+[2026-07-27 05:58:30] [PHASE 2] METRICS | loss=2.3716 | learning_rate=4.93006e-06 | grad_norm=3.67753 | epoch=0.509259
+[2026-07-27 05:59:01] [PHASE 2] Đang xử lý optimizer step 120/648...
+[2026-07-27 05:59:04] [PHASE 2] Đã hoàn tất | step=120/648 (18.5%) | elapsed=6m 52s | ETA=30m 16s | GPU RAM=0.87/11.82 GB
+[2026-07-27 05:59:04] [PHASE 2] METRICS | loss=2.299 | learning_rate=4.8949e-06 | grad_norm=5.49637 | epoch=0.555556
+[2026-07-27 05:59:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=122/648 (18.8%) | elapsed=7m 0s | ETA=30m 10s | GPU RAM=8.01/11.82 GB
+[2026-07-27 05:59:35] [PHASE 2] Đang xử lý optimizer step 130/648...
+[2026-07-27 05:59:38] [PHASE 2] Đã hoàn tất | step=130/648 (20.1%) | elapsed=7m 26s | ETA=29m 39s | GPU RAM=0.87/11.82 GB
+[2026-07-27 05:59:38] [PHASE 2] METRICS | loss=2.2739 | learning_rate=4.85279e-06 | grad_norm=3.10163 | epoch=0.601852
+[2026-07-27 06:00:09] [PHASE 2] Đang xử lý optimizer step 140/648...
+[2026-07-27 06:00:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=139/648 (21.5%) | elapsed=8m 0s | ETA=29m 17s | GPU RAM=8.44/11.82 GB
+[2026-07-27 06:00:13] [PHASE 2] Đã hoàn tất | step=140/648 (21.6%) | elapsed=8m 1s | ETA=29m 6s | GPU RAM=0.87/11.82 GB
+[2026-07-27 06:00:13] [PHASE 2] METRICS | loss=2.3736 | learning_rate=4.80386e-06 | grad_norm=3.18523 | epoch=0.648148
+[2026-07-27 06:00:42] [PHASE 2] Đang xử lý optimizer step 150/648...
+[2026-07-27 06:00:46] [PHASE 2] Đã hoàn tất | step=150/648 (23.1%) | elapsed=8m 34s | ETA=28m 26s | GPU RAM=0.87/11.82 GB
+[2026-07-27 06:00:46] [PHASE 2] METRICS | loss=2.2817 | learning_rate=4.74823e-06 | grad_norm=3.60449 | epoch=0.694444
+[2026-07-27 06:01:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=157/648 (24.2%) | elapsed=9m 0s | ETA=28m 8s | GPU RAM=1.71/11.82 GB
+[2026-07-27 06:01:16] [PHASE 2] Đang xử lý optimizer step 160/648...
+[2026-07-27 06:01:19] [PHASE 2] Đã hoàn tất | step=160/648 (24.7%) | elapsed=9m 7s | ETA=27m 49s | GPU RAM=0.87/11.82 GB
+[2026-07-27 06:01:19] [PHASE 2] METRICS | loss=2.3079 | learning_rate=4.68608e-06 | grad_norm=3.75884 | epoch=0.740741
+[2026-07-27 06:01:49] [PHASE 2] Đang xử lý optimizer step 170/648...
+[2026-07-27 06:01:52] [PHASE 2] Đã hoàn tất | step=170/648 (26.2%) | elapsed=9m 40s | ETA=27m 12s | GPU RAM=0.87/11.82 GB
+[2026-07-27 06:01:52] [PHASE 2] METRICS | loss=2.2726 | learning_rate=4.61758e-06 | grad_norm=3.20321 | epoch=0.787037
+[2026-07-27 06:02:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=175/648 (27.0%) | elapsed=10m 0s | ETA=27m 1s | GPU RAM=2.03/11.82 GB
+[2026-07-27 06:02:22] [PHASE 2] Đang xử lý optimizer step 180/648...
+[2026-07-27 06:02:26] [PHASE 2] Đã hoàn tất | step=180/648 (27.8%) | elapsed=10m 14s | ETA=26m 36s | GPU RAM=0.87/11.82 GB
+[2026-07-27 06:02:26] [PHASE 2] METRICS | loss=2.2378 | learning_rate=4.54293e-06 | grad_norm=3.51718 | epoch=0.833333
+[2026-07-27 06:02:57] [PHASE 2] Đang xử lý optimizer step 190/648...
+[2026-07-27 06:03:00] [PHASE 2] Đã hoàn tất | step=190/648 (29.3%) | elapsed=10m 48s | ETA=26m 3s | GPU RAM=0.87/11.82 GB
+[2026-07-27 06:03:00] [PHASE 2] METRICS | loss=2.2881 | learning_rate=4.46235e-06 | grad_norm=3.3257 | epoch=0.87963
+[2026-07-27 06:03:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=193/648 (29.8%) | elapsed=11m 0s | ETA=25m 56s | GPU RAM=1.71/11.82 GB
+[2026-07-27 06:03:30] [PHASE 2] Đang xử lý optimizer step 200/648...
+[2026-07-27 06:03:34] [PHASE 2] Đã hoàn tất | step=200/648 (30.9%) | elapsed=11m 22s | ETA=25m 28s | GPU RAM=0.87/11.82 GB
+[2026-07-27 06:03:34] [PHASE 2] METRICS | loss=2.2307 | learning_rate=4.37608e-06 | grad_norm=3.33227 | epoch=0.925926
+[2026-07-27 06:04:05] [PHASE 2] Đang xử lý optimizer step 210/648...
+[2026-07-27 06:04:09] [PHASE 2] Đã hoàn tất | step=210/648 (32.4%) | elapsed=11m 57s | ETA=24m 55s | GPU RAM=0.87/11.82 GB
+[2026-07-27 06:04:09] [PHASE 2] METRICS | loss=2.3382 | learning_rate=4.28436e-06 | grad_norm=3.12339 | epoch=0.972222
+[2026-07-27 06:04:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=210/648 (32.4%) | elapsed=12m 0s | ETA=25m 1s | GPU RAM=1.71/11.82 GB
+[2026-07-27 06:04:30] [PHASE 2] Bắt đầu epoch 2/3
+[2026-07-27 06:04:40] [PHASE 2] Đang xử lý optimizer step 220/648...
+[2026-07-27 06:04:43] [PHASE 2] Đã hoàn tất | step=220/648 (34.0%) | elapsed=12m 31s | ETA=24m 21s | GPU RAM=0.87/11.82 GB
+[2026-07-27 06:04:43] [PHASE 2] METRICS | loss=2.2921 | learning_rate=4.18746e-06 | grad_norm=3.60936 | epoch=1.01852
+[2026-07-27 06:05:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=228/648 (35.2%) | elapsed=13m 0s | ETA=23m 56s | GPU RAM=1.71/11.82 GB
+[2026-07-27 06:05:14] [PHASE 2] Đang xử lý optimizer step 230/648...
+[2026-07-27 06:05:17] [PHASE 2] Đã hoàn tất | step=230/648 (35.5%) | elapsed=13m 5s | ETA=23m 47s | GPU RAM=0.87/11.82 GB
+[2026-07-27 06:05:17] [PHASE 2] METRICS | loss=2.256 | learning_rate=4.08566e-06 | grad_norm=3.2458 | epoch=1.06481
+[2026-07-27 06:05:47] [PHASE 2] Đang xử lý optimizer step 240/648...
+[2026-07-27 06:05:51] [PHASE 2] Đã hoàn tất | step=240/648 (37.0%) | elapsed=13m 39s | ETA=23m 12s | GPU RAM=0.87/11.82 GB
+[2026-07-27 06:05:51] [PHASE 2] METRICS | loss=2.3245 | learning_rate=3.97925e-06 | grad_norm=3.27501 | epoch=1.11111
+[2026-07-27 06:06:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=246/648 (38.0%) | elapsed=14m 0s | ETA=22m 52s | GPU RAM=1.71/11.82 GB
+[2026-07-27 06:06:21] [PHASE 2] Đang xử lý optimizer step 250/648...
+[2026-07-27 06:06:24] [PHASE 2] Đã hoàn tất | step=250/648 (38.6%) | elapsed=14m 12s | ETA=22m 36s | GPU RAM=0.87/11.82 GB
+[2026-07-27 06:06:24] [PHASE 2] METRICS | loss=2.2065 | learning_rate=3.86856e-06 | grad_norm=3.31746 | epoch=1.15741
+[2026-07-27 06:07:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=250/648 (38.6%) | elapsed=15m 0s | ETA=23m 52s | GPU RAM=0.92/0.94 GB
+[2026-07-27 06:08:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=250/648 (38.6%) | elapsed=16m 0s | ETA=25m 28s | GPU RAM=1.02/1.05 GB
+[2026-07-27 06:09:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=250/648 (38.6%) | elapsed=17m 0s | ETA=27m 3s | GPU RAM=0.90/1.04 GB
+[2026-07-27 06:10:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=250/648 (38.6%) | elapsed=18m 0s | ETA=28m 39s | GPU RAM=0.87/0.92 GB
+[2026-07-27 06:11:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=250/648 (38.6%) | elapsed=19m 0s | ETA=30m 14s | GPU RAM=1.01/1.04 GB
+[2026-07-27 06:12:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=250/648 (38.6%) | elapsed=20m 0s | ETA=31m 50s | GPU RAM=1.00/1.03 GB
+[2026-07-27 06:13:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=250/648 (38.6%) | elapsed=21m 0s | ETA=33m 25s | GPU RAM=1.01/1.05 GB
+[2026-07-27 06:14:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=250/648 (38.6%) | elapsed=22m 0s | ETA=35m 1s | GPU RAM=1.00/1.03 GB
+[2026-07-27 06:15:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=250/648 (38.6%) | elapsed=23m 0s | ETA=36m 37s | GPU RAM=1.01/1.04 GB
+[2026-07-27 06:15:38] [PHASE 2] METRICS | epoch=1.15741
+[2026-07-27 06:15:38] [PHASE 2] ĐÁNH GIÁ XONG | eval_loss=2.0483, eval_rouge1=55.3700, eval_rouge2=26.0800, eval_rougeL=36.0800
+[2026-07-27 06:15:39] [PHASE 2] ĐÃ LƯU CHECKPOINT tại step 250
+[2026-07-27 06:16:11] [PHASE 2] Đang xử lý optimizer step 260/648...
+[2026-07-27 06:16:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=259/648 (40.0%) | elapsed=24m 0s | ETA=36m 2s | GPU RAM=9.49/10.92 GB
+[2026-07-27 06:16:15] [PHASE 2] Đã hoàn tất | step=260/648 (40.1%) | elapsed=24m 3s | ETA=35m 54s | GPU RAM=0.87/10.92 GB
+[2026-07-27 06:16:15] [PHASE 2] METRICS | loss=2.2835 | learning_rate=3.75389e-06 | grad_norm=3.16681 | epoch=1.2037
+[2026-07-27 06:16:46] [PHASE 2] Đang xử lý optimizer step 270/648...
+[2026-07-27 06:16:50] [PHASE 2] Đã hoàn tất | step=270/648 (41.7%) | elapsed=24m 38s | ETA=34m 30s | GPU RAM=0.87/12.23 GB
+[2026-07-27 06:16:50] [PHASE 2] METRICS | loss=2.2354 | learning_rate=3.63558e-06 | grad_norm=3.30351 | epoch=1.25
+[2026-07-27 06:17:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=276/648 (42.6%) | elapsed=25m 0s | ETA=33m 41s | GPU RAM=1.71/12.23 GB
+[2026-07-27 06:17:20] [PHASE 2] Đang xử lý optimizer step 280/648...
+[2026-07-27 06:17:23] [PHASE 2] Đã hoàn tất | step=280/648 (43.2%) | elapsed=25m 11s | ETA=33m 6s | GPU RAM=0.87/12.23 GB
+[2026-07-27 06:17:23] [PHASE 2] METRICS | loss=2.2417 | learning_rate=3.51397e-06 | grad_norm=3.68682 | epoch=1.2963
+[2026-07-27 06:17:54] [PHASE 2] Đang xử lý optimizer step 290/648...
+[2026-07-27 06:17:57] [PHASE 2] Đã hoàn tất | step=290/648 (44.8%) | elapsed=25m 45s | ETA=31m 47s | GPU RAM=0.87/12.23 GB
+[2026-07-27 06:17:57] [PHASE 2] METRICS | loss=2.3315 | learning_rate=3.38942e-06 | grad_norm=3.2035 | epoch=1.34259
+[2026-07-27 06:18:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=294/648 (45.4%) | elapsed=26m 0s | ETA=31m 18s | GPU RAM=3.30/12.23 GB
+[2026-07-27 06:18:27] [PHASE 2] Đang xử lý optimizer step 300/648...
+[2026-07-27 06:18:31] [PHASE 2] Đã hoàn tất | step=300/648 (46.3%) | elapsed=26m 19s | ETA=30m 32s | GPU RAM=0.87/12.23 GB
+[2026-07-27 06:18:31] [PHASE 2] METRICS | loss=2.1714 | learning_rate=3.26229e-06 | grad_norm=3.74906 | epoch=1.38889
+[2026-07-27 06:19:02] [PHASE 2] Đang xử lý optimizer step 310/648...
+[2026-07-27 06:19:05] [PHASE 2] Đã hoàn tất | step=310/648 (47.8%) | elapsed=26m 53s | ETA=29m 19s | GPU RAM=0.87/12.23 GB
+[2026-07-27 06:19:05] [PHASE 2] METRICS | loss=2.2518 | learning_rate=3.13294e-06 | grad_norm=3.85052 | epoch=1.43519
+[2026-07-27 06:19:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=311/648 (48.0%) | elapsed=27m 0s | ETA=29m 15s | GPU RAM=3.38/12.23 GB
+[2026-07-27 06:19:37] [PHASE 2] Đang xử lý optimizer step 320/648...
+[2026-07-27 06:19:40] [PHASE 2] Đã hoàn tất | step=320/648 (49.4%) | elapsed=27m 28s | ETA=28m 9s | GPU RAM=0.87/12.23 GB
+[2026-07-27 06:19:40] [PHASE 2] METRICS | loss=2.2309 | learning_rate=3.00176e-06 | grad_norm=2.98106 | epoch=1.48148
+[2026-07-27 06:20:10] [PHASE 2] Đang xử lý optimizer step 330/648...
+[2026-07-27 06:20:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=329/648 (50.8%) | elapsed=28m 0s | ETA=27m 8s | GPU RAM=8.45/12.23 GB
+[2026-07-27 06:20:13] [PHASE 2] Đã hoàn tất | step=330/648 (50.9%) | elapsed=28m 1s | ETA=27m 0s | GPU RAM=0.87/12.23 GB
+[2026-07-27 06:20:13] [PHASE 2] METRICS | loss=2.1554 | learning_rate=2.86912e-06 | grad_norm=3.36586 | epoch=1.52778
+[2026-07-27 06:20:44] [PHASE 2] Đang xử lý optimizer step 340/648...
+[2026-07-27 06:20:47] [PHASE 2] Đã hoàn tất | step=340/648 (52.5%) | elapsed=28m 35s | ETA=25m 53s | GPU RAM=0.87/12.23 GB
+[2026-07-27 06:20:47] [PHASE 2] METRICS | loss=2.1103 | learning_rate=2.7354e-06 | grad_norm=3.17416 | epoch=1.57407
+[2026-07-27 06:21:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=346/648 (53.4%) | elapsed=29m 0s | ETA=25m 18s | GPU RAM=1.71/12.23 GB
+[2026-07-27 06:21:19] [PHASE 2] Đang xử lý optimizer step 350/648...
+[2026-07-27 06:21:22] [PHASE 2] Đã hoàn tất | step=350/648 (54.0%) | elapsed=29m 10s | ETA=24m 50s | GPU RAM=0.87/12.23 GB
+[2026-07-27 06:21:22] [PHASE 2] METRICS | loss=2.2474 | learning_rate=2.60101e-06 | grad_norm=3.42181 | epoch=1.62037
+[2026-07-27 06:21:53] [PHASE 2] Đang xử lý optimizer step 360/648...
+[2026-07-27 06:21:57] [PHASE 2] Đã hoàn tất | step=360/648 (55.6%) | elapsed=29m 45s | ETA=23m 48s | GPU RAM=0.87/12.68 GB
+[2026-07-27 06:21:57] [PHASE 2] METRICS | loss=2.1823 | learning_rate=2.46632e-06 | grad_norm=3.39324 | epoch=1.66667
+[2026-07-27 06:22:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=364/648 (56.2%) | elapsed=30m 0s | ETA=23m 24s | GPU RAM=7.79/12.68 GB
+[2026-07-27 06:22:26] [PHASE 2] Đang xử lý optimizer step 370/648...
+[2026-07-27 06:22:30] [PHASE 2] Đã hoàn tất | step=370/648 (57.1%) | elapsed=30m 18s | ETA=22m 46s | GPU RAM=0.87/12.68 GB
+[2026-07-27 06:22:30] [PHASE 2] METRICS | loss=2.1008 | learning_rate=2.33173e-06 | grad_norm=3.50518 | epoch=1.71296
+[2026-07-27 06:23:00] [PHASE 2] Đang xử lý optimizer step 380/648...
+[2026-07-27 06:23:04] [PHASE 2] Đã hoàn tất | step=380/648 (58.6%) | elapsed=30m 52s | ETA=21m 46s | GPU RAM=0.87/12.68 GB
+[2026-07-27 06:23:04] [PHASE 2] METRICS | loss=2.1609 | learning_rate=2.19763e-06 | grad_norm=3.16259 | epoch=1.75926
+[2026-07-27 06:23:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=382/648 (59.0%) | elapsed=31m 0s | ETA=21m 35s | GPU RAM=1.71/12.68 GB
+[2026-07-27 06:23:35] [PHASE 2] Đang xử lý optimizer step 390/648...
+[2026-07-27 06:23:38] [PHASE 2] Đã hoàn tất | step=390/648 (60.2%) | elapsed=31m 26s | ETA=20m 48s | GPU RAM=0.87/12.68 GB
+[2026-07-27 06:23:38] [PHASE 2] METRICS | loss=2.2308 | learning_rate=2.06441e-06 | grad_norm=3.3818 | epoch=1.80556
+[2026-07-27 06:24:10] [PHASE 2] Đang xử lý optimizer step 400/648...
+[2026-07-27 06:24:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=399/648 (61.6%) | elapsed=32m 0s | ETA=19m 58s | GPU RAM=10.35/12.68 GB
+[2026-07-27 06:24:13] [PHASE 2] Đã hoàn tất | step=400/648 (61.7%) | elapsed=32m 1s | ETA=19m 51s | GPU RAM=0.87/12.68 GB
+[2026-07-27 06:24:13] [PHASE 2] METRICS | loss=2.2178 | learning_rate=1.93245e-06 | grad_norm=3.26184 | epoch=1.85185
+[2026-07-27 06:24:44] [PHASE 2] Đang xử lý optimizer step 410/648...
+[2026-07-27 06:24:47] [PHASE 2] Đã hoàn tất | step=410/648 (63.3%) | elapsed=32m 35s | ETA=18m 55s | GPU RAM=0.87/12.68 GB
+[2026-07-27 06:24:47] [PHASE 2] METRICS | loss=2.2035 | learning_rate=1.80213e-06 | grad_norm=3.45417 | epoch=1.89815
+[2026-07-27 06:25:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=417/648 (64.4%) | elapsed=33m 0s | ETA=18m 16s | GPU RAM=7.61/12.68 GB
+[2026-07-27 06:25:18] [PHASE 2] Đang xử lý optimizer step 420/648...
+[2026-07-27 06:25:21] [PHASE 2] Đã hoàn tất | step=420/648 (64.8%) | elapsed=33m 9s | ETA=18m 0s | GPU RAM=0.87/12.68 GB
+[2026-07-27 06:25:21] [PHASE 2] METRICS | loss=2.2041 | learning_rate=1.67385e-06 | grad_norm=3.32103 | epoch=1.94444
+[2026-07-27 06:25:52] [PHASE 2] Đang xử lý optimizer step 430/648...
+[2026-07-27 06:25:55] [PHASE 2] Đã hoàn tất | step=430/648 (66.4%) | elapsed=33m 43s | ETA=17m 5s | GPU RAM=0.87/12.68 GB
+[2026-07-27 06:25:55] [PHASE 2] METRICS | loss=2.2248 | learning_rate=1.54796e-06 | grad_norm=3.58787 | epoch=1.99074
+[2026-07-27 06:26:02] [PHASE 2] Bắt đầu epoch 3/3
+[2026-07-27 06:26:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=434/648 (67.0%) | elapsed=34m 0s | ETA=16m 45s | GPU RAM=2.39/12.68 GB
+[2026-07-27 06:26:26] [PHASE 2] Đang xử lý optimizer step 440/648...
+[2026-07-27 06:26:29] [PHASE 2] Đã hoàn tất | step=440/648 (67.9%) | elapsed=34m 17s | ETA=16m 12s | GPU RAM=0.87/12.68 GB
+[2026-07-27 06:26:29] [PHASE 2] METRICS | loss=2.0986 | learning_rate=1.42484e-06 | grad_norm=3.41446 | epoch=2.03704
+[2026-07-27 06:27:01] [PHASE 2] Đang xử lý optimizer step 450/648...
+[2026-07-27 06:27:04] [PHASE 2] Đã hoàn tất | step=450/648 (69.4%) | elapsed=34m 52s | ETA=15m 20s | GPU RAM=0.87/12.68 GB
+[2026-07-27 06:27:04] [PHASE 2] METRICS | loss=2.1889 | learning_rate=1.30483e-06 | grad_norm=3.23049 | epoch=2.08333
+[2026-07-27 06:27:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=452/648 (69.8%) | elapsed=35m 0s | ETA=15m 10s | GPU RAM=8.62/12.68 GB
+[2026-07-27 06:27:36] [PHASE 2] Đang xử lý optimizer step 460/648...
+[2026-07-27 06:27:39] [PHASE 2] Đã hoàn tất | step=460/648 (71.0%) | elapsed=35m 27s | ETA=14m 29s | GPU RAM=0.87/12.68 GB
+[2026-07-27 06:27:39] [PHASE 2] METRICS | loss=2.1509 | learning_rate=1.1883e-06 | grad_norm=3.61375 | epoch=2.12963
+[2026-07-27 06:28:10] [PHASE 2] Đang xử lý optimizer step 470/648...
+[2026-07-27 06:28:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=469/648 (72.4%) | elapsed=36m 0s | ETA=13m 44s | GPU RAM=9.27/12.68 GB
+[2026-07-27 06:28:13] [PHASE 2] Đã hoàn tất | step=470/648 (72.5%) | elapsed=36m 1s | ETA=13m 38s | GPU RAM=0.87/12.68 GB
+[2026-07-27 06:28:13] [PHASE 2] METRICS | loss=2.2223 | learning_rate=1.07558e-06 | grad_norm=3.95336 | epoch=2.17593
+[2026-07-27 06:28:44] [PHASE 2] Đang xử lý optimizer step 480/648...
+[2026-07-27 06:28:47] [PHASE 2] Đã hoàn tất | step=480/648 (74.1%) | elapsed=36m 35s | ETA=12m 48s | GPU RAM=0.87/12.68 GB
+[2026-07-27 06:28:47] [PHASE 2] METRICS | loss=2.1583 | learning_rate=9.66987e-07 | grad_norm=3.1311 | epoch=2.22222
+[2026-07-27 06:29:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=487/648 (75.2%) | elapsed=37m 0s | ETA=12m 13s | GPU RAM=9.29/12.68 GB
+[2026-07-27 06:29:19] [PHASE 2] Đang xử lý optimizer step 490/648...
+[2026-07-27 06:29:22] [PHASE 2] Đã hoàn tất | step=490/648 (75.6%) | elapsed=37m 10s | ETA=11m 59s | GPU RAM=0.87/12.68 GB
+[2026-07-27 06:29:22] [PHASE 2] METRICS | loss=2.2013 | learning_rate=8.62848e-07 | grad_norm=3.4984 | epoch=2.26852
+[2026-07-27 06:29:53] [PHASE 2] Đang xử lý optimizer step 500/648...
+[2026-07-27 06:29:56] [PHASE 2] Đã hoàn tất | step=500/648 (77.2%) | elapsed=37m 44s | ETA=11m 10s | GPU RAM=0.87/12.68 GB
+[2026-07-27 06:29:56] [PHASE 2] METRICS | loss=2.1321 | learning_rate=7.63462e-07 | grad_norm=3.68223 | epoch=2.31481
+[2026-07-27 06:30:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=500/648 (77.2%) | elapsed=38m 0s | ETA=11m 14s | GPU RAM=1.02/1.05 GB
+[2026-07-27 06:31:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=500/648 (77.2%) | elapsed=39m 0s | ETA=11m 32s | GPU RAM=1.00/1.04 GB
+[2026-07-27 06:32:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=500/648 (77.2%) | elapsed=40m 0s | ETA=11m 50s | GPU RAM=1.02/1.06 GB
+[2026-07-27 06:33:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=500/648 (77.2%) | elapsed=41m 0s | ETA=12m 8s | GPU RAM=1.02/1.06 GB
+[2026-07-27 06:34:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=500/648 (77.2%) | elapsed=42m 0s | ETA=12m 25s | GPU RAM=1.01/1.05 GB
+[2026-07-27 06:35:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=500/648 (77.2%) | elapsed=43m 0s | ETA=12m 43s | GPU RAM=1.02/1.05 GB
+[2026-07-27 06:36:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=500/648 (77.2%) | elapsed=44m 0s | ETA=13m 1s | GPU RAM=1.01/1.04 GB
+[2026-07-27 06:37:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=500/648 (77.2%) | elapsed=45m 0s | ETA=13m 19s | GPU RAM=0.99/1.03 GB
+[2026-07-27 06:38:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=500/648 (77.2%) | elapsed=46m 0s | ETA=13m 36s | GPU RAM=1.01/1.04 GB
+[2026-07-27 06:38:51] [PHASE 2] METRICS | epoch=2.31481
+[2026-07-27 06:38:51] [PHASE 2] ĐÁNH GIÁ XONG | eval_loss=2.0110, eval_rouge1=55.2300, eval_rouge2=26.1000, eval_rougeL=36.5400
+[2026-07-27 06:38:53] [PHASE 2] ĐÃ LƯU CHECKPOINT tại step 500
+[2026-07-27 06:39:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=505/648 (77.9%) | elapsed=47m 0s | ETA=13m 18s | GPU RAM=9.37/10.90 GB
+[2026-07-27 06:39:25] [PHASE 2] Đang xử lý optimizer step 510/648...
+[2026-07-27 06:39:28] [PHASE 2] Đã hoàn tất | step=510/648 (78.7%) | elapsed=47m 16s | ETA=12m 47s | GPU RAM=0.87/11.23 GB
+[2026-07-27 06:39:28] [PHASE 2] METRICS | loss=2.1615 | learning_rate=6.69117e-07 | grad_norm=3.21475 | epoch=2.36111
+[2026-07-27 06:39:59] [PHASE 2] Đang xử lý optimizer step 520/648...
+[2026-07-27 06:40:03] [PHASE 2] Đã hoàn tất | step=520/648 (80.2%) | elapsed=47m 51s | ETA=11m 46s | GPU RAM=0.87/11.56 GB
+[2026-07-27 06:40:03] [PHASE 2] METRICS | loss=2.1891 | learning_rate=5.80087e-07 | grad_norm=3.62111 | epoch=2.40741
+[2026-07-27 06:40:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=522/648 (80.6%) | elapsed=48m 0s | ETA=11m 35s | GPU RAM=8.25/11.56 GB
+[2026-07-27 06:40:33] [PHASE 2] Đang xử lý optimizer step 530/648...
+[2026-07-27 06:40:36] [PHASE 2] Đã hoàn tất | step=530/648 (81.8%) | elapsed=48m 24s | ETA=10m 46s | GPU RAM=0.87/11.56 GB
+[2026-07-27 06:40:36] [PHASE 2] METRICS | loss=2.1686 | learning_rate=4.9663e-07 | grad_norm=3.41507 | epoch=2.4537
+[2026-07-27 06:41:08] [PHASE 2] Đang xử lý optimizer step 540/648...
+[2026-07-27 06:41:11] [PHASE 2] Đã hoàn tất | step=540/648 (83.3%) | elapsed=48m 59s | ETA=9m 47s | GPU RAM=0.87/12.01 GB
+[2026-07-27 06:41:11] [PHASE 2] METRICS | loss=2.1846 | learning_rate=4.1899e-07 | grad_norm=3.60159 | epoch=2.5
+[2026-07-27 06:41:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=540/648 (83.3%) | elapsed=49m 0s | ETA=9m 48s | GPU RAM=8.01/12.01 GB
+[2026-07-27 06:41:42] [PHASE 2] Đang xử lý optimizer step 550/648...
+[2026-07-27 06:41:45] [PHASE 2] Đã hoàn tất | step=550/648 (84.9%) | elapsed=49m 33s | ETA=8m 49s | GPU RAM=0.87/12.01 GB
+[2026-07-27 06:41:45] [PHASE 2] METRICS | loss=2.1692 | learning_rate=3.47391e-07 | grad_norm=3.3553 | epoch=2.5463
+[2026-07-27 06:42:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=557/648 (86.0%) | elapsed=50m 0s | ETA=8m 10s | GPU RAM=2.28/12.01 GB
+[2026-07-27 06:42:16] [PHASE 2] Đang xử lý optimizer step 560/648...
+[2026-07-27 06:42:19] [PHASE 2] Đã hoàn tất | step=560/648 (86.4%) | elapsed=50m 7s | ETA=7m 52s | GPU RAM=0.87/12.01 GB
+[2026-07-27 06:42:19] [PHASE 2] METRICS | loss=2.0943 | learning_rate=2.82041e-07 | grad_norm=3.41014 | epoch=2.59259
+[2026-07-27 06:42:50] [PHASE 2] Đang xử lý optimizer step 570/648...
+[2026-07-27 06:42:53] [PHASE 2] Đã hoàn tất | step=570/648 (88.0%) | elapsed=50m 41s | ETA=6m 56s | GPU RAM=0.87/12.01 GB
+[2026-07-27 06:42:53] [PHASE 2] METRICS | loss=2.134 | learning_rate=2.2313e-07 | grad_norm=3.66565 | epoch=2.63889
+[2026-07-27 06:43:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=575/648 (88.7%) | elapsed=51m 0s | ETA=6m 28s | GPU RAM=7.41/12.01 GB
+[2026-07-27 06:43:23] [PHASE 2] Đang xử lý optimizer step 580/648...
+[2026-07-27 06:43:26] [PHASE 2] Đã hoàn tất | step=580/648 (89.5%) | elapsed=51m 14s | ETA=6m 0s | GPU RAM=0.87/12.01 GB
+[2026-07-27 06:43:26] [PHASE 2] METRICS | loss=2.1435 | learning_rate=1.70829e-07 | grad_norm=3.41655 | epoch=2.68519
+[2026-07-27 06:43:57] [PHASE 2] Đang xử lý optimizer step 590/648...
+[2026-07-27 06:44:00] [PHASE 2] Đã hoàn tất | step=590/648 (91.0%) | elapsed=51m 48s | ETA=5m 5s | GPU RAM=0.87/12.01 GB
+[2026-07-27 06:44:00] [PHASE 2] METRICS | loss=2.1922 | learning_rate=1.2529e-07 | grad_norm=3.48019 | epoch=2.73148
+[2026-07-27 06:44:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=593/648 (91.5%) | elapsed=52m 0s | ETA=4m 49s | GPU RAM=1.71/12.01 GB
+[2026-07-27 06:44:31] [PHASE 2] Đang xử lý optimizer step 600/648...
+[2026-07-27 06:44:34] [PHASE 2] Đã hoàn tất | step=600/648 (92.6%) | elapsed=52m 22s | ETA=4m 11s | GPU RAM=0.87/12.01 GB
+[2026-07-27 06:44:34] [PHASE 2] METRICS | loss=2.2097 | learning_rate=8.66443e-08 | grad_norm=3.24921 | epoch=2.77778
+[2026-07-27 06:45:06] [PHASE 2] Đang xử lý optimizer step 610/648...
+[2026-07-27 06:45:09] [PHASE 2] Đã hoàn tất | step=610/648 (94.1%) | elapsed=52m 57s | ETA=3m 17s | GPU RAM=0.87/12.01 GB
+[2026-07-27 06:45:09] [PHASE 2] METRICS | loss=2.2108 | learning_rate=5.50051e-08 | grad_norm=3.55187 | epoch=2.82407
+[2026-07-27 06:45:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=610/648 (94.1%) | elapsed=53m 0s | ETA=3m 18s | GPU RAM=2.28/12.01 GB
+[2026-07-27 06:45:39] [PHASE 2] Đang xử lý optimizer step 620/648...
+[2026-07-27 06:45:43] [PHASE 2] Đã hoàn tất | step=620/648 (95.7%) | elapsed=53m 31s | ETA=2m 25s | GPU RAM=0.87/12.01 GB
+[2026-07-27 06:45:43] [PHASE 2] METRICS | loss=2.178 | learning_rate=3.04638e-08 | grad_norm=3.52091 | epoch=2.87037
+[2026-07-27 06:46:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=628/648 (96.9%) | elapsed=54m 0s | ETA=1m 43s | GPU RAM=1.72/12.01 GB
+[2026-07-27 06:46:13] [PHASE 2] Đang xử lý optimizer step 630/648...
+[2026-07-27 06:46:17] [PHASE 2] Đã hoàn tất | step=630/648 (97.2%) | elapsed=54m 5s | ETA=1m 32s | GPU RAM=0.87/12.01 GB
+[2026-07-27 06:46:17] [PHASE 2] METRICS | loss=2.1277 | learning_rate=1.30918e-08 | grad_norm=3.36515 | epoch=2.91667
+[2026-07-27 06:46:48] [PHASE 2] Đang xử lý optimizer step 640/648...
+[2026-07-27 06:46:51] [PHASE 2] Đã hoàn tất | step=640/648 (98.8%) | elapsed=54m 39s | ETA=40s | GPU RAM=0.87/12.01 GB
+[2026-07-27 06:46:51] [PHASE 2] METRICS | loss=2.1532 | learning_rate=2.93949e-09 | grad_norm=3.72198 | epoch=2.96296
+[2026-07-27 06:47:12] [PHASE 2] ♥ VẪN ĐANG TRAIN | step=646/648 (99.7%) | elapsed=55m 0s | ETA=10s | GPU RAM=6.90/12.01 GB
+[2026-07-27 06:47:20] [PHASE 2] ĐÃ LƯU CHECKPOINT tại step 648
+[2026-07-27 06:47:20] [PHASE 2] METRICS | epoch=3
+[2026-07-27 06:47:20] [PHASE 2] KẾT THÚC TRAIN | step=648/648 (100.0%) | elapsed=55m 8s | ETA=đang tính
+[2026-07-27 06:56:13] [PHASE 2] METRICS | epoch=3
+[2026-07-27 06:56:13] [PHASE 2] ĐÁNH GIÁ XONG | eval_loss=2.0110, eval_rouge1=55.2300, eval_rouge2=26.1000, eval_rougeL=36.5400
+[2026-07-27 07:05:02] [PHASE 2] METRICS | epoch=3
+[2026-07-27 07:05:02] [PHASE 2] ĐÁNH GIÁ XONG | 
