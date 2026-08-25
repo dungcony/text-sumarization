@@ -1021,7 +1021,9 @@ def run_original_data(args: argparse.Namespace) -> dict[str, Any]:
             "output_dir": str(output_dir) if temporary_output else None,
             "medical_variant": medical_name,
             "phase_1_dataset": "parquet news",
-            "phase_2_dataset": "medical CSV",
+            "phase_2_dataset": (
+                "biomedical candidate CSV; run filter_biomedical.py before training"
+            ),
             "not_used_by_two_phase_pipeline": (
                 ["data_summary.csv"]
                 if (input_dir / "data_summary.csv").is_file()
